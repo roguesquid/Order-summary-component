@@ -1,37 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Order summary card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <picture class="header__background-container">
+        <source
+          media="(min-width: 481px)"
+          srcset="./images/pattern-background-desktop.svg"
+        />
+        <img
+          class="header__background"
+          src="./images/pattern-background-mobile.svg"
+          alt="background pattern"
+        />
+      </picture>
+    </header>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
+    <main class="main">
+      <div class="card">
+        <figure class="card__img-container">
+          <img
+            src="./images/illustration-hero.svg"
+            alt="illustration hero"
+            class="card__img"
+          />
+        </figure>
+        <div class="card__content">
+          <h2 class="card__title">Order Summary</h2>
+          <p class="card__description">
+            You can now listen to millions of songs, audiobooks, and podcast on
+            any device anywhere you like!
+          </p>
+          <div class="card__plan">
+            <div class="card__plan-container">
+              <div class="card__plan-info">
+                <figure class="card__plan-icon-container">
+                  <img
+                    class="card__plan-icon"
+                    src="./images/icon-music.svg"
+                    alt="icon music"
+                  />
+                </figure>
+                <div class="card__plan-data">
+                  <span class="card__plan-title">Annual Plan</span>
+                  <span class="card__plan-value">$59.99/year</span>
+                </div>
+              </div>
+              <a class="card__link card__link--underline" href="">Change</a>
+            </div>
+          </div>
+          <button class="card__button">Proceed to Payment</button>
+          <a class="card__cancel card__link" href="">Cancel Order</a>
+        </div>
+      </div>
+    </main>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer class="attribution">
+      <p class="attribution__text">
+        Challenge by
+        <a
+          class="attribution__link card__link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a class="attribution__link card__link" href="#">Luis Martin</a>.
+      </p>
+    </footer>
+  </body>
 </html>
