@@ -102,7 +102,7 @@ img {
 }
 .card__plan-title {
   color: var(--dark-blue);
-  font-weight: var(--font-bold);
+  font-weight: var(--font-black);
   font-size: var(--medium-text);
   display: block;
 }
